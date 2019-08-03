@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/style.css" />
+
+</head>
+
+<body>
+
+
+    <div id="canvas">
+        
+
+        <div class="card text-center" id="info">
+                
+            <div class="card-header">
+                Be more engaged!
+            </div>
+            <div class="card-body pt-5">
+                <h5 class="card-title">Our Chicago community</h5><br> <br>
+                <p class="card-text">With our community you always have a chance to help others and to get help in
+                    Chicago.<br>
+                    Join us and see what you can do!</p><br>
+                <button class="btn btn-primary" id="create">Create an account</button><br><br>
+                <button class="btn btn-warning" id="login">Log in</button><br> <br>
+                <a href="index.html"><button class="btn btn-warning">Home</button></a>
+
+
+                <form id="signup-form">
+                    <div class="form-group  text-center">
+                        <div class="form-row">
+                            <div class="form-group col-md-3"> </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="create-email" placeholder="Email" required />
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="create-password" placeholder="Password"
+                                    required />
+                            </div>
+                            <div class="form-group col-md-3"> </div>
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <p id="error-message"></p>
+
+                    <button type="submit" class="btn btn-primary">Submit</button> <br><br>
+                </form>
+
+                <form id="login-form">
+                    <div class="form-group  text-center">
+                        <div class="form-row">
+                            <div class="form-group col-md-3"> </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="login-email" placeholder="Email" required />
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="login-password" placeholder="Password"
+                                    required />
+                            </div>
+                            <div class="form-group col-md-3"> </div>
+                        </div>
+                    </div>
+                    <p id="error-message"></p>
+
+                    <button type="submit" class="btn btn-primary">Submit</button> <br><br>
+                    <!-- type="submit" class="btn btn-primary" -->
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div class="card-footer text-muted text-center">
+            WeThePeople
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    
+
+    <script src="./assets/javascript/initializeFB.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/javascript/auth.js"></script>
+
+</body>
+
+</html>

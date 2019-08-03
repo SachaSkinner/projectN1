@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/CSS/style.css" />
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="z-depth-0 grey lighten-4" id="navig">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">
+                <img src="./assets/images/Free_Sample_By_Wix.jpg" style="width: 70px; ">
+            </a>
+            <ul id="nav-mobile" class="right">
+                <li class="logged-in">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+                </li>
+                <li class="logged-in">
+                    <a href="#" class="grey-text" id="logout">Logout</a>
+                </li>
+
+
+                </span>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+        <div class="modal-content center-align">
+            <h4>Account details</h4><br />
+            <div class="account-details">
+                <img src="./assets/images/myAvatar5.png">
+
+
+                <table id="updated-page">
+                    <thead>
+                        <tr>
+                            <th class="slim-row">About me</th>
+                            <th class="slim-row">My interests</th>
+                            <th class="slim-row">Free time available</th>
+                            <th class="slim-row">Address</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="example" style="display: table-row">
+                            <!-- <td> <input id="account-name" placeholder="My name is Alex Skinner, I am a web developer"></td> -->
+                            <td class="slim-row"><span id="account-name"></span></td>
+                            <td class="slim-row"><span id="account-skills"></span>
+                            </td>
+                            <td class="slim-row"><span id="account-hours"></span></td>
+                            <td class="slim-row"><span id="account-address"></span></td>
+
+                        </tr>
+                        <tr id="input" style="display: none">
+
+                            <td> <input id="account-name-edit" placeholder="My name is ..." type="text"></td>
+                            <td> <input id="account-skills-edit" placeholder="I like doing ..." type="text"></td>
+                            <td> <input id="account-hours-edit" placeholder="I am available ..." type="text"></td>
+                            <td> <input id="account-address-edit" placeholder="My address is.." type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <td><button class="center-align waves-effect waves-light btn" id="update-my-profile" style="display: inline">Update
+                        my profile</button></td>
+                <td><button class="center-align waves-effect waves-light btn" id="save-changes" style="display: none">Save
+                        changes</button></td>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWS LIST -->
+    <div class="container" style="margin-top: 40px;" id="news">
+        <ul class="collapsible z-depth-0 guides" style="border: none;">
+
+            <li>
+                <div class="collapsible-header grey lighten-4">Donation</div>
+                <div class="collapsible-body white">
+
+                    <table id="donation-table">
+                            <thead> 
+                        <tr>
+                            <th>Information</th>
+                            <th>Due date</th>
+                            <th>Adress</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Streeterville children's community needs some donation: children's books, toys, school
+                                supplies</td>
+                            <td>September 2019</td>
+                            <td>Chicago, Streeterville, McClurg Ct3559</td>
+                            <td>+678990</td>
+                        </tr>
+                    </tbody>
+
+
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-4">Volunteering</div>
+                <div class="collapsible-body white">
+                    <table id="volunteering-table">
+                        <thead>
+                        <tr>
+                            <th>Information</th>
+                            <th>Due date</th>
+                            <th>Address</th>
+                            <th>Contact</th>
+                            <!-- <th><button class="waves-effect waves-light btn">See profile</button></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Literacy Chicago needs some help with teaching adult students. We have different
+                                classes: ESL, digital class, reading, citizenship..You do not need to be a professional
+                                teacher to become a part of our community. All ages welcome!</td>
+                            <td>No due, welcome all year round</td>
+                            <td>Chicago, 641 W Lake St #200</td>
+                            <td>+678990</td>
+                        </tr>
+                    </tbody>
+
+
+                    </table>
+
+                </div>
+            </li> <br><br>
+
+            <!-- Add News  -->
+            <li>
+                <div class="collapsible-header grey lighten-4">Add Your Donation</div>
+                <div class="collapsible-body white">
+                    <form>
+
+                        <div class="input-field col s12">
+                            <label for="donation-name-input">Information</label>
+                            <input class="form-control" id="info-input" placeholder="Information" type="text">
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label for="destination-input">Due date</label>
+                            <input class="form-control" id="due-input" placeholder="Due date" type="text">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="start-input">Address</label>
+                            <input class="form-control" id="address-input" placeholder="Address" type="text">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="frequency-input">Contact number</label>
+                            <input class="form-control" id="contact-input" placeholder="Contact" type="text">
+                        </div>
+                        <button class="waves-effect waves-light btn" id="add-donation-btn">Submit</button>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Add Volunteers  -->
+            <li>
+
+                <div class="collapsible-header grey lighten-4">Add Your Volunteering</div>
+                <div class="collapsible-body white">
+                    <form>
+
+                        <div class="input-field col s12">
+                            <label for="volunteering-name-input">Information</label>
+                            <input class="form-control" id="info-input-v" placeholder="Information" type="text">
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label for="destination-input">Due date</label>
+                            <input class="form-control" id="due-input-v" placeholder="Due date" type="text">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="start-input">Address</label>
+                            <input class="form-control" id="address-input-v" placeholder="Address" type="text">
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="frequency-input">Contact number</label>
+                            <input class="form-control" id="contact-input-v" placeholder="Contact" type="text">
+                        </div>
+                        <button class="waves-effect waves-light btn" id="add-volunteering-btn">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="./assets/javascript/initializeFB.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/javascript/auth.js"></script>
+    <script src="./assets/javascript/loggedin.js"></script>
+
+
+</body>
+
+</html>
