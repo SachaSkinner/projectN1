@@ -1,0 +1,48 @@
+.card-footer {
+  
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    
+}
+body {
+    margin: 0;
+    height: 100;
+}
+.card-body {
+    padding-top: 100px;
+}
+
+#signup-form {
+    display: none;
+}
+
+#login-form {
+    display: none;
+}
+#news {
+    display: none;
+}
+#navig {
+    display: none;
+}
+
+#canvas {
+    padding: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;   
+
+}
+.slim-row {
+    
+    word-wrap: break-word;
+    
+}
+#updated-page {
+    table-layout: fixed;
+}
+#navig {
+    display: flex;
+    margin: auto;
+}

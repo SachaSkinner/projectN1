@@ -1,0 +1,80 @@
+
+/* Jennifer CSS */
+body {
+    width:100%;
+    text-align: center;
+    background-color: rgb(101, 233, 233);
+  
+    
+}
+header{
+    text-align: center;
+}
+.container {
+   text-align: center;
+   /* background-color:red; */
+   width: 960px;
+   height: auto;
+}
+#previousButton, #nextButton {
+    cursor: pointer;
+    font-size: 36px;
+}
+#previousButton {
+    display:inline;
+}
+.signInButton, .quizButton {
+    cursor: pointer;
+}
+
+
+/* George's CSS */
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2C2C2C;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+
+        box-shadow: 10px 10px 5px black;
+
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+.hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: teal;
+    margin: 6px 0;
+}
